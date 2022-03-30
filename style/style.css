@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+@font-face {
+    font-family:'norsebold';
+    src: url('../fonts/Norse-Bold.otf');
+    
+}
+body {
+    display:flex;
+    flex-direction: row;
+    margin: 0;
+    height: 99.2vh;
+    background-color: #2a42ed;
+}
+
+.picture {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    max-width: 635px;
+    min-width: 635px;
+    min-height: 834px;
+}
+
+.work_area {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 75vw;
+    min-width: 950px;
+}
+
+.third {
+    display:flex;
+    flex-direction: column;
+}
+
+p {
+    margin: 30px 200px 30px 70px;
+}
+
+.top {    
+    font-family: "Cabin", sans-serif;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;    
+    line-height: 33pt;
+}
+
+.top > .line {
+    font-family: "Cabin", sans-serif;
+    color: white;
+    font-size: 17pt;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.mid {
+    height: 52vh;
+}
+
+.animation {
+    opacity: 0;
+    animation: animIn 2s ease forwards;
+    animation-delay: calc(var(--order)*80ms);
+}
+@keyframes animIn {   
+    7% {
+        opacity: 1;
+        transform: scale(0.02);
+    }
+    7%,50% {
+        opacity: 1;
+        transform:scale(1.2);
+    }
+    50%,100% {
+        opacity: 1;
+        transform:scale(1);
+    }
+}
+
+.logo {
+    font-family: 'norsebold';
+    color: white;
+    font-size: 50pt;
+    position: fixed;
+    left: 127px;
+    top: 862px;
+}
+
+.icon {
+    position: fixed;
+    top: 847px;
+    left: 52px;
+    height: 86px;
+    width: auto;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 1062px;
+    max-width: 1062px;
+}
+
+form div input {
+    position: relative;
+    top: 23px;
+    left: 23px;
+    border-radius: 15px;
+    height: 22px;
+    padding-left: 20px;
+}
+
+form div input + label {
+    position: relative;
+    top: -6px;
+    left: -172px;
+    font-family: "Cabin",sans-serif;
+    color: rgb(26, 40, 224);
+    font-size: 14px;
+}
+
+.input_box {
+    margin: 40px 0 40px 30px;
+    width: 326px;
+}
+
+.mid {
+    background-color: #fdf3f3;
+    box-shadow: 1px 4px 20px 0px #1c141461;
+}
+
+form > div > input:valid {
+    background-image: url("../img/01-512.webp");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 167px;
+    box-shadow: 9px 5px 18px #2f66b938;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {  
+    border: 2px solid red;  
+    box-shadow: 5px 7px 18px rgba(238, 105, 105, 0.6);
+    animation-name: shake;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    background-image: url("../img/120-1209780_delete-circle-icon-png-target-logo.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 167px;
+}
+
+@keyframes shake {
+    0%,20%,40%,60%,80% {
+        transform: translateX(5px);
+    }
+    10%,30%,50%,70%,90% {
+        transform: translateX(-5px);
+    }
+}
+
+input[value=""]:not(:focus) {
+    border: 2px solid #996e6e3d;
+}
+
+
+form div input + label + label {
+    position: relative;
+    top: 32px;
+    left: 35px;
+    font-family: "Cabin",sans-serif;
+    color: rgb(26, 40, 224);
+    font-size: 14px;
+}
+
+button {
+    background-color: #fedce9;
+    color: #3558fc;
+    font-family: 'CABIN',sans-serif;
+    font-weight: 1000;
+    border-radius: 6px;
+    margin-top: 149px;
+    margin-left: -297px;
+    border: 1px solid #0000000a;
+    padding: 10px 40px 12px 40px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+button:hover {
+    background-color: #e7c8d4;
+}
+
+button:active {
+    background-color: #ceb3bd;
+}
+
+.login {
+    margin: -2px 0 0 349px;
+    font-size: 17px;    
+}
+
+.login > a {
+    position: relative;
+    font-family: 'CABIN',sans-serif;
+    color: #3558fc;
+    font-weight: 1000;
+    top: -50px;
+    left: 251px;
+    text-decoration: none;
+}

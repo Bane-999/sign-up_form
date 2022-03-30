@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js" defer></script>
+</head>
+<body>
+
+    <div class="work_area">
+
+        <div class="third top">
+            <p class="animation" style="--order: 7">This is not a real online service!<br>
+                You know you need something like this in <br> your life to help you realize your deepest <br> dreams. </p>
+            <p class="line animation" style="--order: 8">Sign up now to get started.</p>
+        </div>
+
+        <div class="third mid animation" style="--order: 9">
+            <form action="" method="post">
+
+                 <div class="input_box animation" style="--order: 14">
+                    <input type="text" id="FirstName" placeholder=" " value="" onchange="this.setAttribute('value',this.value);" name="first_name" required >
+                    <label for="FirstName">First Name</label>
+                 </div>
+
+                 <div class="input_box animation" style="--order: 12">
+                    <input type="text" id="LastName" placeholder=" " value="" onchange="this.setAttribute('value',this.value);" name="last_name" required>
+                    <label for="LastName">Last Name</label>
+                 </div>  
+
+                 <div class="input_box animation" style="--order: 13">
+                    <input type="email" id="Email" placeholder=" " value="" onchange="this.setAttribute('value',this.value);" name="email" required > 
+                    <label for="Email">Email</label>
+                 </div>  
+
+                 <div class="input_box animation" style="--order: 11">
+                    <input type="tel" id="PhoneNumber" pattern="[0-9]{3}/[0-9]{3}-[0-9]{4}" title="Format: 064/456-7890" placeholder=" " value="" onchange="this.setAttribute('value',this.value);" name="phone_number" required >
+                    <label for="PhoneNumber">Phone Number</label>
+                 </div>  
+
+                 <div class="input_box animation" style="--order: 15">
+                    <input type="password" id="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Set password with:&#010-at least 6 characters,&#010-at least 1 uppercase character,&#010-at least 1 lowercase character,&#010-at least 1 number" placeholder=" " value="" onchange="this.setAttribute('value',this.value);" name="password" required >
+                    <label for="Password">Password</label>
+                 </div>  
+
+                 <div class="input_box animation" style="--order: 16">
+                  <input type="password" id="Confirm_Password"  placeholder=" " value="" onchange="this.setAttribute('value',this.value);" name="conf_password" onkeyup="passMatch();" required >
+                  <label for="Password">Confirm Password</label>
+                  <label id="dont_match" for="Confirm_Password"></label>
+                 </div>  
+
+                 <div class="animation button" style="--order: 17">
+                   <button type="submit" >Create Account</button>  
+                 </div>
+
+                 <div class="login animation button" style="--order: 18">
+                  <p>Already have an account?</p>
+                  <a href="index.html">Log in</a>
+                 </div>
+
+
+            </form>
+        </div>
+
+        <div class="third bot">
+            <img src="./img/odin-lined.png" alt="icon of the odin project" class="icon animation" style="--order: 9">
+            <span class="logo animation" style="--order: 10">ODIN</span>
+        </div>       
+
+    </div>
+ 
+    <div class="picture">  
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.06 719.29">
+            <g id="yellow_circle" class="animation" style="--order: 4">
+              <circle cx="358.94" cy="599.65" r="119.65" fill="#ffdde9"/>
+            </g>
+            <g id="bot_left" class="animation" style="--order: 5">
+              <path d="M453.53,170.82H209C209.53,301.91,316,408,447.18,408q3.18,0,6.35-.09Z" transform="translate(-208.94 309.18)" fill="#0826af"/>
+            </g>
+            <g id="bg_bot_left" class="animation" style="--order: 3">
+              <path d="M447.18,408C316,408,209.53,301.91,209,170.82v239.3h239.3V408Z" transform="translate(-208.94 309.18)" fill="#3659fd"/>
+            </g>
+            <g id="strapes" class="animation" style="--order: 1">
+              <path d="M498.35-69.53c0,105.84,85.81,191.65,191.65,191.65" transform="translate(-208.94 309.18)" fill="none" stroke="#0926b2" stroke-miterlimit="10" stroke-width="12"/>
+              <path d="M539.65-69.53A150.34,150.34,0,0,0,690,80.82" transform="translate(-208.94 309.18)" fill="none" stroke="#0926b2" stroke-miterlimit="10" stroke-width="12"/>
+              <path d="M580.59-69.53A109.4,109.4,0,0,0,690,39.88" transform="translate(-208.94 309.18)" fill="none" stroke="#0926b2" stroke-miterlimit="10" stroke-width="12"/>
+              <path d="M458.56-63.17C461.93,61.76,564.26,162,690,162" transform="translate(-208.94 309.18)" fill="none" stroke="#0926b2" stroke-miterlimit="10" stroke-width="12"/>
+            </g>
+            <g id="top_right" class="animation" style="--order: 6">
+              <path d="M690-70.59c0-131.77-106.82-238.59-238.59-238.59V-70.59Z" transform="translate(-208.94 309.18)" fill="#3659fd"/>
+            </g>
+            <g id="pink_circle" class="animation" style="--order: 2">
+              <path d="M208.94-308.81V167.63c131.09-.57,237.18-107,237.18-238.22S340-308.24,208.94-308.81Z" transform="translate(-208.94 309.18)" fill="#fab8cf"/>
+            </g>
+          </svg>
+          
+    </div>
+       
+</body>
+</html>
